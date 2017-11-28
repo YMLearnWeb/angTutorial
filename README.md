@@ -17,3 +17,6 @@
 	<li>use Lamada in the files</li>
 </ul>
 <h2>Task two: GUID Add</h2>
+<ul>
+	<li>Change the promise to observable subscribe </li>
+</ul>	
