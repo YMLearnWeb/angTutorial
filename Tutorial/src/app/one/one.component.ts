@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import 'rxjs/Rx';
 import { StuService } from '../stu.service';
+import 'rxjs/add/operator/map';
+
+import 'rxjs/add/operator/toPromise';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-one',
@@ -9,15 +14,12 @@ import { StuService } from '../stu.service';
 })
 export class OneComponent implements OnInit {
 
-  constructor(private stuService:StuService) { }
+  constructor(private stuService:StuService) {
 
-  ngOnInit() {
-    this.getStudent();
   }
-
   students;
-  title = 'Guid Task'
-  getStudent(){
-    this.stuService.getStudent().then(res =>this.students = res)
+  ngOnInit() {
+    this.stuService.getStudent().subscribe(res=>this.students = res);
   }
+
 }

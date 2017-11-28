@@ -1,0 +1,24 @@
+<p>Add new student</p>
+<input type="text" class="name" placeholder="name" #name (keyup)="0"/>
+
+<input type="text" class="score" placeholder="score" #score/>
+
+<input type="button" class="adbtn" value="Add" (click)="addStudent(name.value,score.value)"/>
+
+<ul>
+  <li *ngFor = 'let student of students' (click)="modifyStudent(student)">
+    {{student.name}}: {{student.score}}
+    <input type="button" class="delbtn" value="Del" (click)="delStudent(student)">
+  </li>
+</ul>
+
+<div class="update" [ngStyle]="{display:displayStyle}">
+  <input type="text" class="name" #perStuName value = "{{perStudent?perStudent.name:' '}}"/>
+  <input type="text" class="score" #perStuScore value = "{{perStudent?perStudent.score:' '}}" />
+  <input type="button" class="updatebtn" value="Save" (click)="updateStudent(perStuName.value,perStuScore.value)"/>
+</div>
+
+<input type="button" class="getbtn" value="Get" (click)="getAnotherStudent()"/>
+<ul>
+  <li *ngFor = 'let astudent of anotherStus'>{{astudent.name}}: {{astudent.score}}</li>
+</ul>

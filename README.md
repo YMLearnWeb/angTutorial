@@ -1,5 +1,5 @@
 # angTutorial
-<h2>Task one: GUID</h2>
+<h2>Task one: GUID Get</h2>
 <ul>
   <li>How to use angular-in-memory-web-api </li>
   <li>Understand the basic angular file structure and general angular2 command</li>
@@ -14,6 +14,6 @@
 	<li>Create stu-data.ts -fake data</li>
 	<li>Create stu.service.ts, the file is about the restful api operations</li>
 	<li>Import HttopModule,HttpClientModule,InMemoryWebApiModule in app.module</li>
-	<li></li>
+	<li>use Lamada in the files</li>
 </ul>
- 
+<h2>Task two: GUID Add</h2>
