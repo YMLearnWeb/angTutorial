@@ -8,7 +8,7 @@
 <p>Technology</p>
 <ul>
 	<li>Build the new ng project like ng new Tut</li>
-	<li>Install the angular-in-memeory-web-api</li>
+	<li>Install the angular-in-memeory-web-api which is the an in-memory web api for Angular demos and tests that emulates CRUD operations over a RESTy API.</li>
 	<li>Generate new component: ng generate component one</li>
 	<li>Run ng-server to see how the work looks like in the browser in http://localhost:4200</li>
 	<li>Create stu-data.ts -fake data</li>
